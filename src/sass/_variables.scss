@@ -15,7 +15,7 @@ $colored-issue:                 true !default;
 $color-status:                  true !default;
 $use-gravatars:                 true !default;
 $use-font-awesome:              true !default;
-$use-logo:                      false !default;
+$use-logo:                      true !default;
 $use-retina-logo:               false !default;
 $issue-subject-large:           true !default;
 $enable-sidebar-toggler:        true !default;
@@ -56,7 +56,7 @@ $state-danger:                  #f7a6a4 !default;
 $body-bg:                       #fff !default;
 $text-color:                    $gray-dark !default;
 
-$link-color:                    #4183c4 !default;
+$link-color:                    #584492 !default;
 $link-hover-color:              darken($link-color, 10%) !default;
 $link-hover-decoration:         underline !default;
 $link-closed-decoration:        line-through !default;
@@ -68,16 +68,16 @@ $link-color-user-locked:        $gray !default;
 //== Typography
 //
 
-$font-family-sans-serif:        "Helvetica Neue", Helvetica, Arial, freesans, sans-serif !default;
+$font-family-sans-serif:        "Fira Sans", sans-serif !default;
 
-$font-family-monospace:         Consolas, "Liberation Mono", Menlo, "Courier New", Courier, monospace !default;
+$font-family-monospace:         "Fira Mono", monospace !default;
 $font-family-base:              $font-family-sans-serif !default;
 $font-weight-normal:            normal !default;
 $font-weight-bold:              bold !default;
 
-$font-size-base:                14px !default;
-$font-size-large:               1.285em !default;
-$font-size-large-px:            18px !default;
+$font-size-base:                16px !default;
+$font-size-large:               1.469em !default;
+$font-size-large-px:            20px !default;
 $font-size-small-unitless:      .86 !default;
 $font-size-small:               $font-size-small-unitless * 1em !default;
 $font-size-small-px:            floor($font-size-small-unitless * $font-size-base) !default;
@@ -102,7 +102,7 @@ $headings-anchor-color-active:  $gray-light !default;
 //== Wiki
 //
 
-$wiki-text:                     #333 !default;
+$wiki-text:                     #000 !default;
 $wiki-font-size:                16px !default;
 $wiki-line-height:              1.6 !default;
 
@@ -140,7 +140,7 @@ $component-active-color:        $brand-text !default;
 $component-active-bg:           $brand-primary !default;
 $component-active-border:       $brand-primary !default;
 
-$font-size-list:                .92em !default;
+$font-size-list:                1em !default;
 
 $collapsible-animation-time:    .3s !default;
 
@@ -338,7 +338,7 @@ $header-bg:                     $brand-primary !default;
 $header-text:                   $brand-text !default;
 $header-link:                   $brand-text !default;
 $header-root:                   $brand-accent !default;
-$header-padding-vertical:       10px !default;
+$header-padding-vertical:       24px !default;
 $header-padding-horizontal:     $padding-side !default;
 $header-title-size:             $font-size-h3 !default;
 $header-title-line-height:      $line-height-computed * 1.5 !default;

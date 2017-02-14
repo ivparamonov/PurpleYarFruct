@@ -185,11 +185,12 @@ tr.issue {
       .assigned_to,
       .subject {
         a {
-          font-weight: $font-weight-bold;
+          // font-weight: $font-weight-bold;
         }
       }
     }
   }
+
 
   @for $i from 1 through 9 {
     &.idnt-#{$i} .subject {

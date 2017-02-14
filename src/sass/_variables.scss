@@ -57,7 +57,7 @@ $body-bg:                       #fff !default;
 $text-color:                    $gray-dark !default;
 
 $link-color:                    #584492 !default;
-$link-hover-color:              darken($link-color, 10%) !default;
+$link-hover-color:              darken($link-color, 20%) !default;
 $link-hover-decoration:         underline !default;
 $link-closed-decoration:        line-through !default;
 $link-color-issue-closed:       $gray !default;
@@ -153,13 +153,13 @@ $table-condensed-cell-padding:  5px !default;
 
 $table-list-header-border:      0 0 2px !default;
 $table-list-item-border:        0 0 1px !default;
-$table-list-color-odd-rows:     true !default;
+$table-list-color-odd-rows:     false !default;
 $table-list-color-even-rows:    false !default;
-$table-list-highlight-rows:     false !default;
+$table-list-highlight-rows:     true !default;
 
 $table-bg:                      transparent !default;
 $table-accent-factor:           .03 !default;
-$table-hover-factor:            .03 !default;
+$table-hover-factor:            .05 !default;
 $table-bg-accent:               rgba(#000, $table-accent-factor) !default;
 $table-bg-hover:                rgba(#000, $table-hover-factor) !default;
 $table-bg-active:               $table-bg-hover !default;
@@ -170,25 +170,25 @@ $table-border-color:            darken($body-bg, 13.5%) !default;
 //== Trackers priorities
 //
 
-$priority-lowest-bg:            #dff4d0 !default;
-$priority-lowest-text:          #676 !default;
-$priority-lowest-link:          #096 !default;
+$priority-lowest-bg:            #def !default
+$priority-lowest-text:          $text-color !default
+$priority-lowest-link:          $link-color !default
 
 $priority-default-bg:           #fff !default;
 $priority-default-text:         $text-color !default;
 $priority-default-link:         $link-color !default;
 
-$priority-high3-bg:             #d5eaff !default;
-$priority-high3-text:           #556 !default;
-$priority-high3-link:           #05a !default;
+$priority-high3-bg:             #fee !default;
+$priority-high3-text:           $text-color !default;
+$priority-high3-link:           $link-color !default
 
-$priority-high2-bg:             #ffe1d7 !default;
-$priority-high2-text:           #855 !default;
-$priority-high2-link:           #b04 !default;
+$priority-high2-bg:             #fdd !default;
+$priority-high2-text:           $text-color !default;
+$priority-high2-link:           $link-color !default
 
-$priority-highest-bg:           #ffa5a5 !default;
-$priority-highest-text:         #944 !default;
-$priority-highest-link:         #a03 !default;
+$priority-highest-bg:           #f88 !default;
+$priority-highest-text:         $text-color !default;
+$priority-highest-link:         $link-color !default
 
 
 //== Trackers links
@@ -197,7 +197,7 @@ $priority-highest-link:         #a03 !default;
 $tracker-inline-padding:        1px 5px !default;
 $tracker-list-padding:          0 6px !default;
 
-$tracker-default-bg:            #668 !default;
+$tracker-default-bg:            #666 !default;
 $tracker-default-text:          $brand-text !default;
 
 $tracker-default-colors-map: (
@@ -209,26 +209,30 @@ $tracker-default-colors-map: (
     background:             $brand-info,
     color:                  $brand-text
   ),
-  3: (
-    background:             $brand-success,
-    color:                  $brand-text
-  ),
-  4: (
+  5: (
     background:             $brand-primary,
     color:                  $brand-text
   ),
-  5: (
+  6: (
     background:             $brand-warning,
     color:                  $brand-text
   ),
-  6: (
+  7: (
     background:             mix($brand-success, $brand-info, 50%),
     color:                  $brand-text
   ),
-  7: (
+  8: (
     background:             mix($brand-primary, $brand-warning, 50%),
     color:                  $brand-text
-  )
+  ),
+  9: (
+    background:             mix($brand-primary, $brand-danger, 50%),
+    color:                  $brand-text
+  ),
+  10: (
+    background:             $brand-success,
+    color:                  $brand-text
+  ),
 ) !default;
 $tracker-custom-colors-map:     () !default;
 $tracker-colors-map:            map-merge($tracker-default-colors-map, $tracker-custom-colors-map);
@@ -281,7 +285,7 @@ $btn-default-bg:                $gray-lightest !default;
 $btn-default-border:            $gray-lighter !default;
 
 $btn-primary-color:             #fff !default;
-$btn-primary-bg:                $brand-info !default;
+$btn-primary-bg:                $brand-primary !default;
 $btn-primary-border:            $btn-primary-bg !default;
 
 $btn-success-color:             #fff !default;
@@ -408,7 +412,7 @@ $sidebar-width-computed:        $sidebar-width - ($sidebar-padding-horizontal * 
 $sidebar-link-hover-bg:         $gray-lightest !default;
 $sidebar-link-active-bg:        $body-bg !default;
 $sidebar-link-active-border:    $gray-lighter !default;
-$sidebar-link-active-side:      $brand-danger !default;
+$sidebar-link-active-side:      $brand-primary !default;
 $sidebar-link-active-text:      $gray-darkest !default;
 
 

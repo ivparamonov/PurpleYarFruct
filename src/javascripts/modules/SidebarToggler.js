@@ -1,4 +1,4 @@
-var PurpleMine = PurpleMine || {}
+var PurpleMine = PurpleMine || {} // eslint-disable-line no-use-before-define
 
 PurpleMine.SidebarToggler = (function () {
   'use strict'
@@ -8,8 +8,17 @@ PurpleMine.SidebarToggler = (function () {
     en: {
       toggler: 'Toggle sidebar'
     },
+    ro: {
+      toggler: 'Deschide/închide bara laterală'
+    },
+    fr: {
+      toggler: 'Basculer la barre latérale'
+    },
     pl: {
       toggler: 'Pokaż/ukryj panel boczny'
+    },
+    ja: {
+      toggler: 'サイドバーの切り替え'
     }
   }
 
@@ -35,7 +44,9 @@ PurpleMine.SidebarToggler = (function () {
 
     // Fix issue with context menu position
     if (this.$main.css('position') === 'relative') {
-      $('#context-menu').appendTo('#wrapper3')
+      $(window).load(function () {
+        $('#context-menu').appendTo('#wrapper3')
+      })
     }
 
     handleSidebar()

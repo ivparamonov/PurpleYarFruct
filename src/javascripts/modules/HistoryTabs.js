@@ -1,4 +1,4 @@
-var PurpleMine = PurpleMine || {}
+var PurpleMine = PurpleMine || {} // eslint-disable-line no-use-before-define
 
 PurpleMine.HistoryTabs = (function () {
   'use strict'
@@ -10,10 +10,30 @@ PurpleMine.HistoryTabs = (function () {
       notes: 'Notes',
       details: 'Changes'
     },
+    ro: {
+      all: 'Toate',
+      notes: 'Note',
+      details: 'Schimbări'
+    },
+    fr: {
+      all: 'Tout',
+      notes: 'Remarques',
+      details: 'Changements'
+    },
     pl: {
       all: 'Wszystko',
       notes: 'Notatki',
       details: 'Zmiany'
+    },
+    de: {
+      all: 'Alles',
+      notes: 'Kommentare',
+      details: 'Änderungen'
+    },
+    ja: {
+      all: 'すべて',
+      notes: '注記',
+      details: '変更'
     }
   }
 
@@ -73,8 +93,8 @@ PurpleMine.HistoryTabs = (function () {
     $this.addClass('selected')
 
     instance.$history
-        .removeClass('hide-details')
-        .removeClass('hide-notes')
+      .removeClass('hide-details')
+      .removeClass('hide-notes')
 
     if (tab === 'notes') {
       instance.$history.addClass('hide-details')

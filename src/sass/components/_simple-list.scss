@@ -72,8 +72,8 @@
   }
 
   dd {
-    font-size: $font-size-small;
     overflow: hidden;
+    font-size: $font-size-small;
 
     &.grouped {
       margin-left: $activity-indent;
@@ -99,15 +99,15 @@
 // Search form
 
 #search-form {
+  margin-bottom: $line-height-computed;
+
   input,
   select {
     margin-right: 5px;
   }
 
   label {
-    @include checkbox;
-    display: inline-block;
-    margin-right: 5px;
+    @include check-inline;
   }
 
   p:last-child {

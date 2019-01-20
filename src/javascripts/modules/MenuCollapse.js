@@ -1,4 +1,4 @@
-var PurpleMine = PurpleMine || {}
+var PurpleMine = PurpleMine || {} // eslint-disable-line no-use-before-define
 
 PurpleMine.MenuCollapse = (function () {
   'use strict'
@@ -8,8 +8,20 @@ PurpleMine.MenuCollapse = (function () {
     en: {
       topMenuToggler: 'Expand/collapse top menu'
     },
+    ro: {
+      topMenuToggler: 'Deschide/închide meniul de sus'
+    },
+    fr: {
+      topMenuToggler: 'Développer/réduire le menu principal'
+    },
     pl: {
       topMenuToggler: 'Zwiń/rozwiń górne menu'
+    },
+    de: {
+      topMenuToggler: 'Ein-/Ausklappen Hauptmenu'
+    },
+    ja: {
+      topMenuToggler: 'トップメニューの展開/折りたたみ'
     }
   }
 

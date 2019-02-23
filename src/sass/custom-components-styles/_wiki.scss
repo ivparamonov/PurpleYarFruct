@@ -1,0 +1,29 @@
+.controller-wiki {
+  @media screen and (min-width: 1400px) {
+  	.contextual {
+  	  .drdn {
+  	  	display: inline;
+  	  	margin-left: $padding-small-vertical;
+
+  	  	.drdn-trigger {
+  	  	  display: none;
+  	  	}
+  	  	.drdn-content {
+  	  	  display: inline;
+  	  	  box-shadow: none;
+  	  	  position: unset;
+
+  	  	  .drdn-items {
+  	  	  	display: inline;
+
+  	  	  	&>a, &>span {
+  	  	  	  display: inline-block;
+  	  	  	  padding: 0 0 0 20px;
+  	  	  	  overflow: unset;
+  	  	  	}
+  	  	  }
+  	  	}
+  	  }
+  	}
+  }
+}
